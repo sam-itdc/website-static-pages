@@ -399,7 +399,7 @@ body .no-pointer {
   margin-top: 11px;
 }
 #news-ticker .search-box .input-keywords {
-  width: 186px;
+  width: 140px;
   height: 20px;
   padding: 2px 3px;
 }
@@ -408,11 +408,17 @@ body .no-pointer {
   background: transparent url(../images/layout/btn-search.jpg) no-repeat center center;
   margin-left: 5px;
   padding: 0;
-  width: 24px;
+  width: 60px;
   height: 24px;
 }
 #news-ticker .search-box .btn-search span {
-  display: none;
+  color: #FFFFFF;
+  padding: 6px 15px;
+  width: auto;
+  border: 1px solid #666;
+  border-radius: 2px;
+  border-color: #3079ed;
+  background-color: #4d90fe;
 }
 #main-content .pure-g .col {
   padding: 0 10px;
