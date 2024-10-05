@@ -10,6 +10,13 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
+
+    - name: 🎫 Apply test title on homepage
+      uses: richardrigutins/replace-in-files@v2
+        with:
+          files: 'index.html'
+          search-text: '<!--TEST ANCHOR-->'
+          replacement-text: '<a href="#" class="btn-internal" style="font-size:36px;">測試站 TEST SITE</a>'
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
