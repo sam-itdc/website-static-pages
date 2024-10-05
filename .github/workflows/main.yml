@@ -11,10 +11,6 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: Check pre-change test title
-      run: |
-        cat index.html
-        
     - name: 🎫 Apply test title on homepage
       uses: richardrigutins/replace-in-files@v2
       with:
@@ -22,10 +18,6 @@ jobs:
         search-text: '<!--TEST ANCHOR-->'
         replacement-text: '<a href="#" class="btn-internal" style="font-size:36px;">測試站 TEST SITE</a>'
 
-    - name: Check post-change test title
-      run: |
-        cat index.html
-    
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
